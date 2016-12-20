@@ -1,7 +1,7 @@
 $(document).ready(function () {
     (function ($) {
         $(function () {
-            $('.dropdown-button').dropdown({ hover: false });
+            $(".dropdown-button").dropdown();
             $('.slider').slider({full_width: true});
             $('.button-collapse').sideNav();
             $('.parallax').parallax();
