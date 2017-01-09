@@ -15,6 +15,7 @@ p {
     line-height: 2rem;
 }
 
+
 .button-collapse {
     color: #26a69a;
 }
@@ -55,3 +56,18 @@ p {
 footer.page-footer {
     margin: 0;
 }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#form_row{
+    margin-bottom: 0;
+}
+
