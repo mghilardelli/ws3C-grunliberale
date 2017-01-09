@@ -59,3 +59,7 @@ p {
 footer.page-footer {
     margin: 0;
 }
+
+.tabs.tabs-transparent .tab a, .tabs.tabs-transparent .tab.disabled a, .tabs.tabs-transparent .tab.disabled a:hover a.active {
+    color: black;
+}
