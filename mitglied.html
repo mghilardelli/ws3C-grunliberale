@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Grünliberale</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!--dropdown of Navigationbar-->
+
+<ul id="mitmachenDesktop" class="dropdown-content">
+    <li><a href="#!">Mitglied werden</a></li>
+    <li class="divider"></li>
+    <li><a href="newsletter.html">Newsletter abonnieren</a></li>
+</ul>
+
+<ul id="mitmachenMobile" class="dropdown-content">
+    <li><a href="#!">Mitglied werden</a></li>
+    <li class="divider"></li>
+    <li><a href="newsletter.html">Newsletter abonnieren</a></li>
+</ul>
+
+<ul id="aktuellDesktop" class="dropdown-content">
+    <li><a href="#!">Medienmitteilung</a></li>
+    <li><a href="#!">Test</a></li>
+
+    <li class="divider"></li>
+    <li><a href="#!">Agenda</a></li>
+</ul>
+
+<ul id="aktuellMobile" class="dropdown-content">
+    <li><a href="#!">Medienmitteilung</a></li>
+    <li><a href="#!">Test</a></li>
+
+    <li class="divider"></li>
+    <li><a href="#!">Agenda</a></li>
+</ul>
+
+
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="" class="brand-logo"><img class="responsive-img" src="img/logo.gif"/></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-activates="aktuellDesktop">Aktuell</a></li>
+            <li><a href="#">Positionen</a></li>
+            <li><a href="#">Aus dem Parlament</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="mitmachenDesktop">Mitmachen</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            <li><a class="dropdown-button" href="#!" data-activates="aktuellMobile">Aktuell</a></li>
+            <li><a href="#">Positionen</a></li>
+            <li><a href="#">Aus dem Parlament</a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="mitmachenMobile">Mitmachen</a></li>
+            <li><a href="#">Services</a></li>
+            <li>
+                <div class="fb-page" data-href="https://www.facebook.com/grunliberale/?fref=ts" data-tabs="timeline"
+                     data-width="300" data-height="1000" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/grunliberale/?fref=ts" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/grunliberale/?fref=ts">Grünliberale</a></blockquote>
+                </div>
+            </li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse right-align">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+</nav>
+<div class="row" style="margin-left: 5%; margin-right: 5%">
+    <br>
+    <br>
+
+    <!-- Left area -->
+    <div class="col m3 hide-on-small-only">
+        <h3>Infos</h3>
+        <i class="large material-icons">mail</i>
+    </div>
+
+    <!-- Middle Area -->
+    <div class="col s12 m6">
+        <div>
+            <h4>Anmeldeformular</h4>
+        </div>
+        <br>
+        <br>
+
+        <!-- Anrede -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Anrede</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <select>
+                    <option value="1">Herr</option>
+                    <option value="2">Frau</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Vorname -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Vorname</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="vorname" type="text" class="validate" required="" aria-required="true">
+                </div>
+            </div>
+        </div>
+
+        <!-- Nachname -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Nachname</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="nachname" type="text" class="validate" required="" aria-required="true">
+                </div>
+            </div>
+        </div>
+
+        <!-- Strasse -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Strasse</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="strasse" type="text" class="validate">
+                </div>
+            </div>
+        </div>
+
+        <!-- Ort -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Ort</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="ort" type="text" class="validate">
+                </div>
+            </div>
+        </div>
+
+        <!-- Telefon -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Mobile Nummer</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="telefon" type="text" class="validate">
+                </div>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Email</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <div class="input-field">
+                    <input id="email" type="text" class="validate" required="" aria-required="true">
+                </div>
+            </div>
+        </div>
+
+        <!-- Textfeld -->
+        <div class="row valign-wrapper" id="form_row">
+            <div class="col s4 valign">
+                <h6>
+                    <b>Wie bist du auf uns aufmerksam geworden</b>
+                </h6>
+            </div>
+            <div class="col s8 input-field valign">
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+            </div>
+        </div>
+
+        <!-- AGB -->
+        <div class="row valign-wrapper" id="form_row">
+            <p>
+                <input type="checkbox" id="test5"/>
+                <label for="test5">Ich habe die AGB's gelesen und akzeptiere diese</label>
+            </p>
+        </div>
+
+        <!-- Submit Button -->
+        <br>
+        <br>
+
+        <div class="row center-align" id="form_row">
+            <a class="waves-effect waves-light btn-large" style="min-width: 40%">Absenden</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+
+
+    <!-- Right area -->
+    <div class="col m3 hide-on-small-only" style="height: inherit;">
+        <div class="fb-page" data-href="https://www.facebook.com/grunliberale/?fref=ts" data-tabs="timeline"
+             data-width="300" data-height="1000" data-small-header="false" data-adapt-container-width="true"
+             data-hide-cover="false" data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/grunliberale/?fref=ts" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/grunliberale/?fref=ts">Grünliberale</a></blockquote>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer teal">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Company Bio</h5>
+                <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's
+                    our full time job. Any amount would help support and continue development on this project and is
+                    greatly appreciated.</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Settings</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Connect</h5>
+                <ul>
+                    <li><a class="white-text" href="#!">Link 1</a></li>
+                    <li><a class="white-text" href="#!">Link 2</a></li>
+                    <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 100, // Creates a dropdown of 100 years to control year
+        max: new Date()
+    });
+</script>
+
+</body>
+</html>
